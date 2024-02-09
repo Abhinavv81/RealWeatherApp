@@ -432,8 +432,13 @@ button{
   border-color: #24343C;
   border-style: none;
   border-radius: 6px;
-  height:29px;
-  width: 109px;
+ padding: 11px;
+ color:white;
+
+}
+button:hover{
+  color: black;
+  background-color: white;
 }
 #weather-image{
   position: absolute;
