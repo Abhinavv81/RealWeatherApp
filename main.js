@@ -14,10 +14,10 @@ function updateWeatherImages(weatherCondition) {
 
     // Define a mapping of weather conditions to image sources
     const weatherImages = {
-      Clear: "/projects/RealWeatherApp/photos/clear.png",
-      Clouds: "/projects/RealWeatherApp/photos/cloudy.png",
-      Rain: "/projects/RealWeatherApp/photos/rainy.png",
-      Snow: "/projects/RealWeatherApp/photos/snowy.png",
+      Clear: "/photos/clear.png",
+      Clouds: "/photos/cloudy.png",
+      Rain: "/photos/rainy.png",
+      Snow: "/photos/snowy.png",
       // Add more conditions as needed
     };
     // Update the 'src' attribute of the image based on the weather condition
