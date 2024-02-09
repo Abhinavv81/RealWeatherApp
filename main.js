@@ -33,7 +33,7 @@ async function getWeather() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${userEnteredLatitude}&lon=${userEnteredLongitude}&units=metric&appid=${apiKey}`;
     const response = await fetch(apiUrl + `&aapid=${apiKey}`)
     var data =await response.json();
-    console.log(data);
+   
     displayoutput(data);
     updateWeatherImages(data.weather[0].main);
 }
