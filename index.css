@@ -447,3 +447,9 @@ button:hover{
   width: 288px;
   object-fit: cover;
 }
+.dark-weather{
+  border-bottom: #fff solid 3px;
+}
+input{
+  background: transparent;
+}
