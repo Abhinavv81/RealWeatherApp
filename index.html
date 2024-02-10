@@ -1,235 +1,99 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title>Weather App</title>
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-    />
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <div class="home">
-      <div class="home-child"></div>
-      <div class="home-item"></div>
-      <div class="home-inner"></div>
-      <img class="group-icon" alt="" src="./public/group-5@2x.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Weather App</title>
 
-      <img class="home-child1" alt="" src="./public/group-2@2x.png" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
+  <script src="main.js"></script>
+</head>
 
-      <img class="home-child2" alt="" src="./public/group-3@2x.png" />
+<body>
+  <div class="home">
+    <div class="home-child"></div>
+    <div class="home-item"></div>
+    <div class="home-inner"></div>
+    <img class="group-icon" alt="" src="./public/group-5@2x.png" />
 
-      <img class="home-child3" alt="" src="./public/group-4@2x.png" />
+    <img class="home-child1" alt="" src="./public/group-2@2x.png" />
 
-      <img class="home-child4" alt="" src="./public/group-1.svg" />
+    <img class="home-child2" alt="" src="./public/group-3@2x.png" />
 
-      <div class="navbar">
-        <div class="logo">
-          <div class="dark-weather">Mausam</div>
-        
-        <!-- <div class="menu">
-          <div class="home-wrapper">
-            <div class="sign-up">Home</div>
-          </div>
-          <div class="home-wrapper">
-            <div class="download-app">Download App</div>
-          </div>
-          <div class="home-wrapper">
-            <div class="download-app">Contact us</div>
+    <img class="home-child3" alt="" src="./public/group-4@2x.png" />
+
+    <img class="home-child4" alt="" src="./public/group-1.svg" />
+
+    <div class="navbar">
+      <div class="logo">
+        <div class="dark-weather">Mausam</div>
+
+
+        <div class="ellipse-div"></div>
+        <div class="seeing-the-weather-of-the-whol-wrapper">
+          <div class="seeing-the-weather-container">
+            <span class="seeing-the-weather">Ye weather app madarchod hain !
+            </span>
+
           </div>
         </div>
-        <div class="sign-up-wrapper">
-          <div class="sign-up">Sign up</div>
-        </div> -->
-      <!-- </div> -->
-      <div class="ellipse-div"></div>
-      <div class="seeing-the-weather-of-the-whol-wrapper">
-        <div class="seeing-the-weather-container">
-          <span class="seeing-the-weather"
-            >Ye weather app madarchod hain !
-          </span>
-          
-        </div>
-      </div>
-      <div class="search-filters">
-        <div class="search-here-wrapper">
-          <div class="search-here">
-            <form >
-              <label>latitude:</label>
-              <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
-              <label>longitude:</label>
-              <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
-          </form>
-          <div class="searchButton">
-              <button type="button" onclick="getWeather()">Get Weather</button>
-          </div>
-          </div>
-        </div>
-        <!-- <div class="frame-parent">
-          <div class="filters-wrapper">
-            <div class="filters">Filters</div>
-          </div>
-          <div class="coldest-parent">
-            <div class="coldest">Coldest</div>
-            <div class="home-wrapper">
-              <img
-                class="vuesaxoutlinearrow-down-icon"
-                alt=""
-                src="./public/vuesaxoutlinearrowdown.svg"
-              />
-            </div>
-          </div> -->
-          <!-- <div class="coldest-parent">
-            <div class="coldest">10°C - 20°C</div>
-            <div class="home-wrapper">
-              <img
-                class="vuesaxoutlinearrow-down-icon"
-                alt=""
-                src="./public/vuesaxoutlinearrowdown.svg"
-              />
+        <div class="search-filters">
+          <div class="search-here-wrapper">
+            <div class="search-here">
+              <form>
+                <label>Latitude</label>
+                <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
+                <label>Longitude</label>
+                <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
+              </form>
+              <div class="searchButton">
+                <button type="button" onclick="getWeather()">Get Weather</button>
+              </div>
             </div>
           </div>
-          <div class="coldest-parent">
-            <div class="coldest">Rainy</div>
-            <div class="home-wrapper">
-              <img
-                class="vuesaxoutlinearrow-down-icon"
-                alt=""
-                src="./public/vuesaxoutlinearrowdown.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="card-parent">
-        <div class="card">
-          <div class="card-inner">
-            <div class="frame-group">
-              <div class="logo">
-                <div class="city">
-                  <span class="cityname">City</span>
-                  <br>
-                  <div class="temperature">Temp -
-                    <span class="temp"></span>
-                    <span class="c">°C</span>
+
+          <div class="card-parent">
+            <div class="card">
+              <div class="card-inner">
+                <div class="frame-group">
+                  <div class="logo">
+                    <div class="city">
+                      <span class="cityname">City</span>
+                      <br>
+                      <div class="temperature">Temp -
+                        <span class="temp"></span>
+                        <span class="c">°C</span>
+                      </div>
+
+
+                    </div>
                   </div>
-                  
-                  
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="details">
-                  <span class="wind">Wind Speed :</span>
-                  <span class="windspeed"></span>
-                  <span class="units">km</span>
-                  
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="day">  
-                </div>
-              </div>  
-              <div class="home-wrapper">
-                <div class="weather">Weather</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-child"></div>
-          <img id="weather-image" alt="" src="/photos/weather.png" />
-          <!-- <img class="card-item" alt="" src="./public/group-3@2x.png" /> -->
-        
-        <!-- <div class="card1">
-          <div class="card-inner">
-            <div class="frame-group">
-              <div class="logo">
-                <div class="coldest">
-                  <b>Qom</b>
-                  <span class="span"> </span>
-                  <span class="c">41°C </span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="coldest">
-                  <span>wind speed : 5 </span>
-                  <span class="c">km</span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="coldest">
-                  <span>Tuesday : </span>
-                  <span class="c">19:52</span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="cloudy">Sunny</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-child"></div>
-          <img class="card-child2" alt="" src="./public/group-3.svg" />
-        </div>
-        <div class="card2">
-          <div class="card-inner1">
-            <div class="frame-group">
-              <div class="logo">
-                <div class="coldest">
-                  <b>Gilan</b>
-                  <span class="span"> 23</span>
-                  <span class="c">°C </span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="coldest">
-                  <span>wind speed : 23</span>
-                  <span class="c"> km</span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="coldest">
-                  <span>Tuesday : </span>
-                  <span class="c">19:52</span>
-                </div>
-              </div>
-              <div class="home-wrapper">
-                <div class="cloudy">Rainy</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-child3"></div>
-          <div class="tshower-wrapper">
-            <div class="tshower">
-              <div class="tshower-effect">
-                <img
-                  class="thunder-icon"
-                  alt=""
-                  src="./public/thunder-icon.svg"
-                />
+                  <div class="home-wrapper">
+                    <div class="details">
+                      <span class="wind">Wind Speed :</span>
+                      <span class="windspeed"></span>
+                      <span class="units">km</span>
 
-                <div class="droplets">
-                  <img
-                    class="water-drop-icon"
-                    alt=""
-                    src="./public/water-drop@2x.png"
-                  />
-
-                  <img
-                    class="water-drop-icon1"
-                    alt=""
-                    src="./public/water-drop@2x.png"
-                  />
+                    </div>
+                  </div>
+                  <div class="home-wrapper">
+                    <div class="day">
+                    </div>
+                  </div>
+                  <div class="home-wrapper">
+                    <div class="weather">Weather</div>
+                  </div>
                 </div>
               </div>
-              <div class="sun"></div>
-              <img class="cloud-icon" alt="" src="./public/cloud.svg" />
+              <div class="card-child"></div>
+              <img id="weather-image" alt="" src="/photos/weather.png" />
+
             </div>
           </div>
-        </div> -->
-      </div>
-    </div>
-  </body>
+</body>
+
 </html>
