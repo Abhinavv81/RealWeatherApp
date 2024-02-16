@@ -1,8 +1,4 @@
 function displayoutput(ans){
-    // const outputContainer = document.getElementById('outputContainer');
-    // const paragraph = document.createElement('p');
-    // paragraph.textContent = JSON.stringify(ans,null,2);
-    // outputContainer.appendChild(paragraph);
     document.querySelector(".temp").innerHTML = ans.main.temp;
     document.querySelector(".cityname").innerHTML = ans.name;
     document.querySelector(".weather").innerHTML = ans.weather[0].main;
@@ -18,7 +14,6 @@ function updateWeatherImages(weatherCondition) {
       Clouds: "/photos/cloudy.png",
       Rain: "/photos/rainy.png",
       Snow: "/photos/snowy.png",
-      // Add more conditions as needed
     };
     // Update the 'src' attribute of the image based on the weather condition
     if (weatherImages.hasOwnProperty(weatherCondition)) {
