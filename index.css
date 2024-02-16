@@ -3,7 +3,6 @@
   border-bottom: #fff solid 3px;
   width: min-content;
   font-size: 40px;
-
 }
 
 .weatherpara {
@@ -12,7 +11,6 @@
   color: #fff;
   margin-top: 1vw;
   margin-bottom: 1vw;
-
 }
 
 .logo {
@@ -21,22 +19,12 @@
   margin-left: 1vw;
 }
 
-
-
-
-
-
-
-
-
 .home-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-
-
 
 form {
   display: flex;
@@ -47,9 +35,7 @@ form {
   margin-top: 1vw;
   margin-bottom: 1vw;
   width: min-content;
-
 }
-
 
 .search-here {
   line-height: 65px;
@@ -67,16 +53,12 @@ form {
   margin-bottom: 100px;
 }
 
-
-
 .search-filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 90vh;
-
-
 }
 
 .temp {
@@ -100,7 +82,6 @@ form {
 }
 
 .card-inner {
-
   border-radius: var(--br-xl);
   background-color: var(--color-darkslategray-100);
   box-shadow: 10px 9px 70px rgba(36, 53, 62, 0.4);
@@ -110,20 +91,10 @@ form {
   justify-content: flex-start;
 }
 
-
 .card {
   position: relative;
   width: 358px;
 }
-
-
-
-
-
-
-
-
-
 
 .home {
   position: relative;
@@ -165,12 +136,9 @@ body {
   width: 290px;
 }
 
-
-
-
 #latitude,
 #longitude {
-  background-color: #1B262C;
+  background-color: #1b262c;
   border-style: none;
   color: white;
   height: 32px;
@@ -178,8 +146,6 @@ body {
   text-align: center;
   font-weight: 700;
   border-bottom: 0.5px solid black;
-
-
 }
 
 #latitude:focus,
@@ -194,16 +160,13 @@ body {
 }
 
 button {
-
-
   font-size: medium;
-  background-color: #1B262C;
-  border-color: #24343C;
+  background-color: #1b262c;
+  border-color: #24343c;
   border-style: none;
   border-radius: 6px;
   padding: 11px;
   color: white;
-
 }
 
 button:hover {
@@ -214,7 +177,6 @@ button:hover {
 #weather-image {
   height: 200px;
   transform: translate(100px, -50px);
-
 
   object-fit: cover;
 }
