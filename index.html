@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -15,85 +15,72 @@
 
 <body>
   <div class="home">
-    <div class="home-child"></div>
-    <div class="home-item"></div>
-    <div class="home-inner"></div>
-    <img class="group-icon" alt="" src="./public/group-5@2x.png" />
-
-    <img class="home-child1" alt="" src="./public/group-2@2x.png" />
-
-    <img class="home-child2" alt="" src="./public/group-3@2x.png" />
-
-    <img class="home-child3" alt="" src="./public/group-4@2x.png" />
-
-    <img class="home-child4" alt="" src="./public/group-1.svg" />
-
-    <div class="navbar">
-      <div class="logo">
-        <div class="dark-weather">Mausam</div>
 
 
-        <div class="ellipse-div"></div>
-        <div class="seeing-the-weather-of-the-whol-wrapper">
-          <div class="seeing-the-weather-container">
-            <span class="seeing-the-weather">Mausam ka anuman lga sakte hain !
-            </span>
+    <div class="logo">
+      <div class="dark-weather">Mausam</div>
+      <div class="weatherpara">Mausam ka anuman lga sakte hain !</div>
 
+
+
+
+
+    </div>
+    <div class="search-filters">
+      <div class="search-here-wrapper">
+        <div class="search-here">
+          <form>
+            <label for="latitude">City</label>
+            <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
+            <label for="longitude">Country Code</label>
+            <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
+          </form>
+          <div class="searchButton">
+            <button type="button" onclick="getWeather()">Get Weather</button>
           </div>
         </div>
-        <div class="search-filters">
-          <div class="search-here-wrapper">
-            <div class="search-here">
-              <form>
-                <label>Latitude</label>
-                <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
-                <label>Longitude</label>
-                <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
-              </form>
-              <div class="searchButton">
-                <button type="button" onclick="getWeather()">Get Weather</button>
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div class="card-parent">
-            <div class="card">
-              <div class="card-inner">
-                <div class="frame-group">
-                  <div class="logo">
-                    <div class="city">
-                      <span class="cityname">City</span>
-                      <br>
-                      <div class="temperature">Temp:
-                        <span class="temp"></span>
-                        <span class="c">°C</span>
-                      </div>
+      <div class="card-parent">
+        <div class="card">
+          <div class="card-inner"> <img id="weather-image" alt="" src="./photos/weather.png" />
+
+            <div class="frame-group">
+              <div class="logo">
+                <div class="city">
+                  <span class="cityname">City</span>
+                  <br>
+                  <div class="temperature">Temp:
+                    <span class="temp"></span>
+                    <span class="c">°C</span>
+                  </div>
 
 
-                    </div>
-                  </div>
-                  <div class="home-wrapper">
-                    <div class="details">
-                      <span class="wind">Wind Speed :</span>
-                      <span class="windspeed"></span>
-                      <span class="units">km</span>
-
-                    </div>
-                  </div>
-                  <div class="home-wrapper">
-                    <div class="day">
-                    </div>
-                  </div>
-                  <div class="home-wrapper">
-                    <div class="weather">Weather</div>
-                  </div>
                 </div>
               </div>
-              <div class="card-child"></div>
-              <img id="weather-image" alt=""img src="/photos/weather.png" />
+              <div class="home-wrapper">
+                <div class="details">
+                  <span class="wind">Wind Speed :</span>
+                  <span class="windspeed"></span>
+                  <span class="units">km</span>
 
+                </div>
+              </div>
+              <div class="home-wrapper">
+                <div class="day">
+                </div>
+              </div>
+              <div class="home-wrapper">
+                <div class="weather">Weather</div>
+              </div>
             </div>
           </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
