@@ -14,6 +14,11 @@ function updateWeatherImages(weatherCondition) {
       Clouds: "/photos/cloudy.png",
       Rain: "/photos/rainy.png",
       Snow: "/photos/snowy.png",
+
+      Clear: "./photos/clear.png",
+      Clouds: "./photos/cloudy.png",
+      Rain: "./photos/rainy.png",
+      Snow: "./photos/snowy.png",
     };
     // Update the 'src' attribute of the image based on the weather condition
     if (weatherImages.hasOwnProperty(weatherCondition)) {
