@@ -31,9 +31,9 @@
         <div class="search-here">
           <form>
             <label for="latitude">City</label>
-            <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
+            <input type="text" id="latitude" name="latitude" placeholder="Enter City Name">
             <label for="longitude">Country Code</label>
-            <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
+            <input type="text" id="longitude" name="longitude" placeholder="Enter Country Code">
           </form>
           <div class="searchButton">
             <button type="button" onclick="getWeather()">Get Weather</button>
@@ -53,6 +53,11 @@
                   <div class="temperature">Temp:
                     <span class="temp"></span>
                     <span class="c">°C</span>
+                    <br>
+                    <span class="wind">Wind Speed :</span>
+                    <span class="windspeed"></span>
+                    <span class="units">km</span>
+                    <span class="weather">Weather</span>
                   </div>
 
 
@@ -60,9 +65,7 @@
               </div>
               <div class="home-wrapper">
                 <div class="details">
-                  <span class="wind">Wind Speed :</span>
-                  <span class="windspeed"></span>
-                  <span class="units">km</span>
+                  
 
                 </div>
               </div>
@@ -71,7 +74,7 @@
                 </div>
               </div>
               <div class="home-wrapper">
-                <div class="weather">Weather</div>
+                <div class="weather"></div>
               </div>
             </div>
           </div>

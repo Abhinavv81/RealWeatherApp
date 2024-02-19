@@ -27,11 +27,11 @@ function updateWeatherImages(weatherCondition) {
     }
 }
 async function getWeather() {
-    const userEnteredLatitude = document.getElementById('latitude').value;
-    const userEnteredLongitude = document.getElementById('longitude').value;
+    const userEnteredCity = document.getElementById('latitude').value;
+    const userEnteredCountry = document.getElementById('longitude').value;
     const apiKey = '1c21f7555d4e44186727dd098d834845';      
     
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${userEnteredLatitude}&lon=${userEnteredLongitude}&units=metric&appid=${apiKey}`;
+    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${userEnteredCity},${userEnteredCountry}&appid=${apiKey}&units=metric`;
     const response = await fetch(apiUrl + `&aapid=${apiKey}`)
     var data =await response.json();
    

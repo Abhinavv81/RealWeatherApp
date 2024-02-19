@@ -69,7 +69,7 @@ form {
 .weather {
   /**/
   position: relative;
-  line-height: 65px;
+  line-height: 4px;
   white-space: pre-wrap;
 }
 
@@ -111,23 +111,23 @@ body {
   background-color: #1b262c;
 }
 
-.cityname {
+.cityname{
   height: 52px;
   width: 143px;
 }
 
 .weather {
-  height: 100px;
+  height: 90px;
   width: 247px;
 }
 
-.wind {
-  height: 100px;
+.wind{
+  height: 52px;
   width: 247px;
 }
 
 .temperature {
-  height: 90px;
+  height: 52px;
   width: 320px;
 }
 
