@@ -175,8 +175,8 @@ button:hover {
 }
 
 #weather-image {
-  height: 200px;
-  transform: translate(100px, -50px);
+  height: 183px;
+  transform: translate(136px, -60px);
 
   object-fit: cover;
 }
