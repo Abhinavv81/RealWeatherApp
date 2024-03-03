@@ -147,8 +147,8 @@ body {
 
 #latitude:focus,
 #longitude:focus {
-  outline: 0.75px ,solid;
-  border: 0.25px solid #bd2d2d;
+  outline: 0.5px ,solid;
+  border: 0px solid #bd2d2d;
 }
 
 #latitude:hover,
